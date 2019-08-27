@@ -2,9 +2,9 @@
 
 namespace HelloWorldProject {
 
-    class Program {  
+    class Program {
 
-        static void Main(string[] args) { 
+        static void Main(string[] args) {
             Console.Write("Hello C# Boot Camp World!");
             Console.WriteLine("At MAX Technical Training");
             int daysInBootcamp = 6;
@@ -44,7 +44,7 @@ namespace HelloWorldProject {
             for(var idx = 0; idx < scores.Length; idx++) {
                 tot = tot + scores[idx];
             }
-            var avg = tot / scores.Length ;
+            var avg = tot / scores.Length;
             Console.WriteLine("Average is " + avg);
             #endregion
 
@@ -53,6 +53,26 @@ namespace HelloWorldProject {
             foreach(var score in scores) {
                 grandTotal += score;
             }
+
+            // floating point numbers
+            var totalDistance = 0.0;
+            var distances = new double[] { 5.99,  3.56, 8.99, 7.47, 8.17, 6.78, 6.33 };
+            foreach(var distance in distances) {
+                totalDistance += distance;
+            }
+            var avgDistance = totalDistance / distances.Length;
+
+            // arrays
+            int[] students = new int[5];
+            students[0] = 7;
+            students[1] = 3;
+            students[2] = 4;
+            students[3] = 15;
+            students[4] = 5;
+
+            string[] names = new string[7];
+            names[0] = "Jeremy";
+            names[1] = "Alex";
         }
     }
 }
