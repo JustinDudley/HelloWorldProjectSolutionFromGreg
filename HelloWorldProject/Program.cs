@@ -2,7 +2,7 @@
 
 namespace HelloWorldProject {
 
-    class Program {
+    class Program { 
 
         static void Main(string[] args) {
             Console.Write("Hello C# Boot Camp World!");
